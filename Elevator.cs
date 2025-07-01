@@ -81,6 +81,13 @@ namespace Elevator_Project
                 Console.WriteLine("We only have {0} floors", topfloor);
                 return;
             }
+            if (floor < 0)
+            {
+                Console.WriteLine("not negative floor allow", floor);
+                return;
+            }
+
+
 
             floorReady[floor] = true;
 
